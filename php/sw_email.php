@@ -21,7 +21,7 @@ if ( isset( $_POST[ "name" ] ) && isset( $_POST[ "email" ] ) && isset( $_POST[ "
 	$headers .= "From:Consulta pagina <" . $email . ">\r\n";
 	$headers .= "Reply-To: $email\r\n";
 	$headers .= "Return-path: $email\r\n";
-	$headers .= "Bcc: sinapsis.soft.developer@gmail.com\r\n";
+	$headers .= "Bcc: info.grupolersar@gmail.com\r\n";
 
 	if ( mail( $to, $subject, $messageHTML, $headers ) ) {
 		echo json_encode( array( 'status' => 'success' ) );
